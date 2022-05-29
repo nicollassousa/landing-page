@@ -6,11 +6,10 @@
     margin: 0 auto;
 }
 body, html{
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .logo{
-    margin-left: 100px;
+    margin: auto;
 }
 header{
     display: flex;
@@ -31,6 +30,7 @@ a:hover{
     transition: 0.4s all;
 }
 main{
+    margin: 30px;
     display: flex;
     flex-direction: row;
 }
@@ -41,7 +41,7 @@ strong{
     color: #017144;
 }
 p{
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     font-size: 1.1em;
     max-width: 500px;
     text-align: justify;
@@ -63,13 +63,3 @@ button:hover{
     transition: 1.5s;
     transition-delay: 0.3s;
 }
-/*.extras{
-    position: relative;
-    bottom: 50px;
-    left: 400px;
-    width: 850px;
-    height: 850px;
-    border-radius:50%;
-    background-color: #017144;
-}*/
-
