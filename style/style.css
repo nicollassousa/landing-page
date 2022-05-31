@@ -6,6 +6,7 @@
     margin: 0 auto;
 }
 body, html{
+    height: 100vh;
     overflow: hidden;
 }
 .logo{
@@ -30,9 +31,12 @@ a:hover{
     transition: 0.4s all;
 }
 main{
-    margin: 30px;
     display: flex;
     flex-direction: row;
+    position: relative;
+    right: 300px;
+    height: 200px;
+    width: 100%;
 }
 h1{
     font-size:2em;
@@ -62,4 +66,19 @@ button:hover{
     color: #017144;
     transition: 1.5s;
     transition-delay: 0.3s;
+}
+.contain{
+    position:fixed;
+    background-color: #017144;
+    background-attachment: fixed;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    top: 200px;
+    right: -300px;
+}
+.conteudo{
+    position: absolute;
+    left: -60px;
+    bottom: 200px;
 }

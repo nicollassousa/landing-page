@@ -1,4 +1,4 @@
-@media screen and (max-width: 560px){
+@media screen and (max-width: 600px){
     .logo{
         margin: 0 auto;
     }
@@ -6,7 +6,9 @@
         flex-direction: column;
     }
     main{
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        margin: auto 300px;
     }
     h1{
         font-size: 20px;
@@ -14,7 +16,7 @@
     p{
         font-weight: 200;
         font-size: 1.1em;
-        max-width: 320px;
+        max-width: 380px;
         text-indent: 20px;
     }
     button{
@@ -27,6 +29,9 @@
         text-align: center;
     }
     picture{
+        display: none;
+    }
+    .contain{
         display: none;
     }
     
