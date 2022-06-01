@@ -1,9 +1,16 @@
+@font-face{
+    font-family:'cafe';
+    src: url('/font/CAFETA__.TTF') format('woff');
+    font-weight: normal;
+    font-style:normal;
+
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
+ 
 }
 body, html{
     height: 100vh;
@@ -38,7 +45,10 @@ main{
     height: 200px;
     width: 100%;
 }
-h1{
+h1{ 
+    font-family: cafe;
+    font-weight: normal;
+    margin: auto;
     font-size:2em;
 }
 strong{
