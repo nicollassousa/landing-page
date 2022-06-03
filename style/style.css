@@ -1,5 +1,11 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+ :root{
+    --font01:Verdana, Geneva, Tahoma, sans-serif;
+    --font02:'IBM Plex Sans', sans-serif;
+ }
 @font-face{
-    font-family:'cafe';
+    font-family:'cafeta';
     src: url('/font/CAFETA__.TTF') format('woff');
     font-weight: normal;
     font-style:normal;
@@ -8,21 +14,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0 auto;
- 
 }
 body, html{
-    height: 100vh;
+    font-family:var(--font01);
     overflow: hidden;
 }
 .logo{
-    margin: auto;
+    margin: 0 100px;
 }
 header{
     display: flex;
     justify-content: space-between;
     height: 200px;
     padding: 20px 0px;
+}
+ul{
+    margin: 0 auto;
 }
 li{
     display: inline-block;
@@ -37,36 +44,33 @@ a:hover{
     transition: 0.4s all;
 }
 main{
+    margin: 0 100px;
     display: flex;
     flex-direction: row;
-    position: relative;
-    right: 300px;
-    height: 200px;
-    width: 100%;
 }
-h1{ 
-    font-family: cafe;
+h1{
+    font-family: 'cafeta';
     font-weight: normal;
-    margin: auto;
     font-size:2em;
 }
 strong{
     color: #017144;
 }
 p{
-    margin: 20px 0;
+    max-width: 40%;
+    font-family:var(--font02);
+    font-weight: normal;
+    font-style: normal;
     font-size: 1.1em;
-    max-width: 320px;
     text-align: justify;
 }
 button{
-    margin-left: 100px;
     border:none;
     border-radius: 10px;
     background-color: #017144;
     color: #ffffff;
+    margin: 5px;
     padding: 5px;
-    width: 40%;
     height: 30px;
     cursor: pointer;
 }
@@ -77,12 +81,12 @@ button:hover{
     transition-delay: 0.3s;
 }
 .contain{
-    position:fixed;
+    position: fixed;
     background-color: #017144;
-    background-attachment: fixed;
+    background-position: center;
+    border-radius: 50%;
     width: 700px;
     height: 700px;
-    border-radius: 50%;
     top: 200px;
     right: -300px;
 }
