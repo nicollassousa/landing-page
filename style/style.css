@@ -44,7 +44,8 @@ a:hover{
     transition: 0.4s all;
 }
 main{
-    margin: 0 100px;
+    height: 100vh;
+    margin: -40px 100px;
     display: flex;
     flex-direction: row;
 }
